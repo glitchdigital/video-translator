@@ -60,7 +60,7 @@
   width: 110px;
   text-align: center;
   padding: 2px 10px;
-  font-family: FontAwesome;
+  font-family: FontAwesome, sans-serif;
   content: "\f017  "attr(data-in-formatted);
   color: #888;
 }

@@ -311,7 +311,7 @@ io.on("connection", function(socket) {
           // @TODO Optimize/merge this metadata generation step?
           addAudioMetadataToScript(script, socket, function(err, scriptWithMetadata) {
             // Once we have metadata, generate audio track
-            joinScriptAudioFiles(scriptWithMetadata, videoTmpDirectory+"/audio-from-script-"+new Date().getTime()+".wav", socket, function(err, audioTrack) {
+            joinScriptAudioFiles(scriptWithMetadata, videoTmpDirectory+"/audio-from-script-"+new Date().getTime()+".mp4", socket, function(err, audioTrack) {
               addAudioTrack(videoFile, audioTrack, socket, function(err, videoUrl) {
                 socket.emit("synthesized_script", { url: videoUrl });
               });
@@ -528,7 +528,7 @@ function addAudioTrack(videoFile, audioTrack, socket, callback) {
  var outputUrl = '/media'+getDirPathFromID(videoID)+'/'+outputFile;
 
   //cmd += inputArgs + filterArgs + ' -map "[a]" -shortest '+outputFile;
-  exec(FFmpeg+' -nostats -i '+videoFile+' -i '+audioTrack+' -map 0:v -map 1:a '+videoDirectory+'/'+outputFile,
+  exec(FFmpeg+' -nostats -i '+videoFile+' -i '+audioTrack+' -vcodec copy -acodec copy -map 0:v -map 1:a '+videoDirectory+'/'+outputFile,
   {
     encoding: "utf8",
     maxBuffer: 1024*1024
