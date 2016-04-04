@@ -4,7 +4,9 @@ This is a prototype web based tool for computer assisted video translation. It p
 
 The goal is to show how translating how videos could be done more easily, quicker and more cost effectively with better tools.
 
-[[https://github.com/glitchdigital/video-translator/blob/master/img/screenshot.png|alt=screenshot]]
+![screenshot](https://raw.githubusercontent.com/glitchdigital/video-translator/master/screenshot.png)
+
+### About this prototype
 
 This prototype is not intended to be something for journalists to be ready to download and use in production. It requires some setup and currently runs only on Unix systems (e.g. Mac, Linux - not Microsoft Windows). Due a limitation of the translation API used in this prototype it does not support direct translation between all language combinations.
 
@@ -18,9 +20,9 @@ You will need node.js and ffmpeg installed to run this software.
 
 You will also need to sign up for an IBM Bluemix account and obtain usernames and passwords for the following APIs:
 
-https://console.ng.bluemix.net/catalog/services/speech-to-text
-https://console.ng.bluemix.net/catalog/services/text-to-speech
-https://console.ng.bluemix.net/catalog/services/language-translation
+* https://console.ng.bluemix.net/catalog/services/speech-to-text
+* https://console.ng.bluemix.net/catalog/services/text-to-speech
+* https://console.ng.bluemix.net/catalog/services/language-translation
 
 ## Installing
 
