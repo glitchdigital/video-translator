@@ -2,9 +2,11 @@
 
 This is a prototype web based tool for computer assisted video translation. It provides an interface for doing computer assisted transcription and translation and generates a new video with a synthesized voice speaking in the selected langauge.
 
-The goal is to show how translating how videos could be done more easily, quicker and more cost effectively with better tools.
+The goal is to show how translating videos could be easier, quicker and done more cost effectively with better tools.
 
 ![screenshot](https://raw.githubusercontent.com/glitchdigital/video-translator/master/screenshot.png)
+
+If you'd like to see what it looks like in use without having to install it and set it up, see the [glitch.digital YouTube channel](https://www.youtube.com/channel/UCQbi0PPu5bObs3_OCiWUs8Q) for videos of it in action.
 
 ### About this prototype
 
