@@ -16,7 +16,7 @@ export TEXT_TO_SPEECH_API_PASSWORD=""
 export FFMPEG="ffmpeg"
 export FFPROBE="ffprobe"
 
-# Look for 'nodejs' (debian/ubntu) or 'node' (default) binary
+# Look for 'nodejs' (debian/ubuntu) or 'node' (default) binary
 if hash nodejs 2>/dev/null; then
   nodejs server.js
 elif hash node 2>/dev/null; then
